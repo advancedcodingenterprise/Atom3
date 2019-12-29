@@ -26,7 +26,7 @@ class HomeController extends Controller {
 
 		$user->save();
 		
-		session(['profile_updated' => 'true']);
+		session(['profile_updated' => 'true']); 
 		
 		return redirect()->route('profile');
 	}
